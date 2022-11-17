@@ -1,0 +1,226 @@
+<div class="row">
+    <div class="col-md-12">
+        <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <a class="nav-link active" data-bs-toggle="tab" href="#factura"
+                    aria-selected="true" role="tab">Facturas</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <b class="nav-link" data-bs-toggle="tab" href="#inventario"
+                    aria-selected="false" role="tab" tabindex="-1">Inventario</b>
+            </li>
+            <li class="nav-item" role="presentation">
+                <c class="nav-link" data-bs-toggle="tab" href="#presupuesto"
+                    aria-selected="false" role="tab" tabindex="-1">Presupuesto</c>
+            </li>
+        </ul>
+        <div id="seccion_factura" class="tab-content">
+            <div class="tab-pane fade active show" id="factura" role="tabpanel">
+                <p>
+                    <div class="col-md-15">
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <d class="nav-link active" data-bs-toggle="tab"
+                                    href="#pendientes" aria-selected="true"
+                                    role="tab">
+                                    Pendientes</d>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <e class="nav-link" data-bs-toggle="tab"
+                                    href="#aceptadas"
+                                    aria-selected="false" role="tab"
+                                    tabindex="-1">Aceptadas</e>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <f class="nav-link" data-bs-toggle="tab"
+                                    href="#rechazadas" aria-selected="false"
+                                    role="tab"
+                                    tabindex="-1">Rechazadas</f>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <g class="nav-link" data-bs-toggle="tab"
+                                    href="#parcial"
+                                    aria-selected="false" role="tab"
+                                    tabindex="-1">Parcial</g>
+                            </li>
+                        </ul>
+                    </div>
+                </p>
+            </div>
+            <!--PESTAÑA INVENTARIO-->
+            <div id="inventario" class="tab-pane fade "role="tabpanel">
+                <p>
+                    <br><br>
+                    <div class="col-md-6">
+                    <form class="d-flex">
+                        <input class="form-control" type="text"
+                            placeholder="Search">
+                        <button class="btn btn-secondary " type="submit">Search</button>    
+                    </form>
+                    </div>
+                    <br><br>
+                
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th Producto="col">Producto</th>
+                                <th Ubicacion="col">Ubicacion</th>
+                                <th Cantidad="col">Cantidad</th>
+
+                            </tr>
+                            <tbody>
+                                <tr class="table-secondary">
+                                    <th Producto="row"></th>
+                                    <td></td>
+                                    <td></td>
+                                </td>
+                            </tr>
+                        </thead>
+                    </table>
+
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <label class="col-form-label mt-4"
+                                    for="inputDefault">Producto
+                                    1</label>
+                            </div>
+                            <div class="col-md-2">
+                                <br>
+                                <input type="text" class="form-control" id="P1">
+                            </div>
+                            <div class="col-md-2">
+                                <label class="col-form-label mt-4"
+                                    for="inputDefault">Cantidad</label>
+                            </div>
+                            <div class="col-md-2">
+                                <br>
+                                <input type="text" class="form-control" id="C1">
+                            </div><div class="col-md-2">
+                                <label class="col-form-label mt-4"
+                                    for="inputDefault">Valor</label>
+                            </div>
+                            <div class="col-md-2">
+                                <br>
+                                <input type="text" class="form-control" id="V1">
+                            </div>
+                        </div>
+                    </div>
+                    <button id="Bn_agregar_inventario" type="button" class="btn
+                        btn-outline-info">Agregar</button>
+                </p>
+
+
+            </div>
+            <div id="presupuesto" class="tab-pane fade "
+                role="tabpanel">
+                <p>
+                    <br><br>
+                    <div class="tab-pane fade active show" id="presupuesto"
+                        role="tabpanel">
+                        <p>
+                            <div class="col-md-15">
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <e class="nav-link" data-bs-toggle="tab"
+                                            href="#revisar"
+                                            aria-selected="false" role="tab"
+                                            tabindex="-1">Revisar</e>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <f class="nav-link" data-bs-toggle="tab"
+                                            href="#analizar"
+                                            aria-selected="false" role="tab"
+                                            tabindex="-1">Analizar</f>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <g class="nav-link" data-bs-toggle="tab"
+                                            href="#modificar"
+                                            aria-selected="false" role="tab"
+                                            tabindex="-1">modificar</g>
+                                    </li>
+                                </ul>
+                            </div>
+                        </p>
+                    </div>
+
+                </p>
+                <div id="table_revisar" class="tab-content">
+                    <div class="tab-pane fade" id="revisar" role="tabpanel">
+                        <p>
+                            <table id="revisar_presupuesto" class="table
+                                table-hover table-striped">
+                                <tbody>
+                                    <thead>
+                                        <tr>
+                                            <th docente="col">Docente</th>
+                                            <th presupuesto_total="col">Presupuesto
+                                                Total</th>
+                                            <th gastos="col">Gastos</th>
+                                            <tr class="table-secondary">
+                                                <th docente="row"></th>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                        </tr>
+                                    </thead>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div id="table_analizar" class="tab-content">
+                        <div class="tab-pane fade" id="analizar" role="tabpanel">
+                            <p>
+                                <table id="revisar_presupuesto" class="table
+                                    table-hover table-striped">
+                                    <tbody>
+                                        <thead>
+                                            <tr>
+                                                <th presupuesto="col">Presupuesto</th>
+                                                <th gastos="col">Gastos</th>
+                                                <tr class="table-secondary">
+                                                    <th presupuesto="row"></th>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                            </tr>
+                                        </thead>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                <div id="modificar" class="tab-pane fade ">
+                <p>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <label class="col-form-label mt-4"
+                                    for="inputDefault">Docente</label>
+                            </div>
+                            <div class="col-md-2">
+                                <br>
+                                <input type="text" class="form-control" id="txt_docente">
+                            </div>
+                            <div class="col-md-2">
+                                <label class="col-form-label mt-4"
+                                    for="inputDefault">Presupuesto</label>
+                            </div>
+                            <div class="col-md-2">
+                                <br>
+                                <input type="text" class="form-control" id="txt_presupuesto">
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <button id="Bn_modificar_presupuesto" type="button" class="btn
+                        btn-outline-info">Modificar</button>
+                </p>
+
+
+            </div>
+
+                </div>
+            </div>
+        </div>
+    </div>

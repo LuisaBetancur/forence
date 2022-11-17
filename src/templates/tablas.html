@@ -1,0 +1,131 @@
+<!-- Tabla de contenido de las facturas pendientes  -->
+<div id="table_pendientes" class="tab-content">
+    <div class="tab-pane fade" id="pendientes" role="tabpanel">
+        <p>
+            <table id="Facturas_pendiente" class="table table-hover
+                table-striped">
+                <thead>
+                    <tr>
+                        <th docente="col">Docente</th>
+                        <th id_factura="col">Id_Factura</th>
+                        <th fecha="col">Fecha</th>
+                        <th aceptada="col"> Aceptada</th>
+                        <th rechazada="col"> Rechazada</th>
+                        <th parcial="col"> Parcial</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table-secondary">
+                        <th docente="row"></th>
+                        <td></td>
+                        <td></td>
+                        <fieldset class="form-group">
+                            <legend class="mt-1"></legend>
+                            <th aceptada="row"><div class="form-check">
+                                    <input class="form-check-input" type="radio"
+                                        name="optionsRadios" id="aceptada"
+                                        value="option1" checked="">
+                                    <label class="form-check-label"
+                                        for="aceptada"> </label>
+                                </div></th>
+                            <th rechazada="row"><div class="form-check">
+                                    <input class="form-check-input" type="radio"
+                                        name="optionsRadios" id="rechazada"
+                                        value="option1" checked="">
+                                    <label class="form-check-label"
+                                        for="rechazada"> </label>
+                                </div></th>
+                            <th parcial="row"><div class="form-check">
+                                    <input class="form-check-input" type="radio"
+                                        name="optionsRadios" id="parcial"
+                                        value="option1" checked="">
+                                    <label class="form-check-label"
+                                        for="parcial"> </label>
+                                </fieldset>
+                            </tr>
+                        </tbody>
+                    </table>
+                </p>
+                <button id="Boton_enviar_facturas" type="button" class="btn
+                    btn-outline-info">Enviar</button>
+            </div>
+            <div id="table_aceptadas" class="tab-content">
+                <div class="tab-pane fade" id="aceptadas" role="tabpanel">
+                    <p> <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th docente="col">Docente</th>
+                                    <th id_factura="col">Id_Factura</th>
+                                    <th fecha="col">Fecha</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="table-secondary">
+                                    <th docente="row"></th>
+                                    <td></td>
+                                    <td></td>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table></p>
+            </div>
+            <!-- Tabla de contenido de las facturas Rechazadas  -->
+            <div id="table_rechazadas" class="tab-content">
+                <div class="tab-pane fade" id="rechazadas" role="tabpanel">
+                    <p> <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th docente="col">Docente</th>
+                                    <th id_factura="col">Id_Factura</th>
+                                    <th fecha="col">Fecha</th>
+                                    <th motivo="col">Motivo</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="table-secondary">
+                                    <th docente="row"></th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th docente="row"></th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table></p>
+            </div>
+            <!-- Tabla de contenido de las facturas Parcial  -->
+            <div id="table_parcial" class="tab-content">
+                <div class="tab-pane fade" id="parcial" role="tabpanel">
+                    <p> <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th docente="col">Docente</th>
+                                    <th id_factura="col">Id_Factura</th>
+                                    <th fecha="col">Fecha</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="table-secondary">
+                                    <th docente="row"></th>
+                                    <td></td>
+                                    <td></td>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </p>
+            </div>
+        </div>
+
+        
+
+
+    </div>
+
+
+</div>
